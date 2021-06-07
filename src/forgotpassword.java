@@ -13,8 +13,8 @@ public class forgotpassword extends javax.swing.JFrame {
     Connection conn;
     ResultSet rs;
     PreparedStatement pst;
-    public static final String ACCOUNT_SID = "AC7b1892d1b0e07b777b456195ba45b920";
-    public static final String AUTH_TOKEN = "c258d6d11645f0228bfcfa1f509501e2";
+    public static final String ACCOUNT_SID = "";
+    public static final String AUTH_TOKEN = "";
 
     public forgotpassword() {
         super("Forgot Password");
@@ -292,16 +292,22 @@ public class forgotpassword extends javax.swing.JFrame {
             }
         }
     }
+   
+   
+ 
+   
+   // Random ra = new Random();
+   //String r1 = ("" + ra.nextInt(9999 + 1));
+   int randomPIN = (int)(Math.random()*9000)+1000;
+   String r1 = ""+randomPIN;
+    
 
-    Random ra = new Random();
-    String r1 = ("" + ra.nextInt(9999 + 1));
-
-    void sendCode() {
+    void sendCode() {  //14243583620
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message message = Message.creator(new com.twilio.type.PhoneNumber("+96171838034"),
-                new com.twilio.type.PhoneNumber("+12517650730"),
+                new com.twilio.type.PhoneNumber("+14243583620"),
                 "Hello " + name.getText() + " ,your verfication code is: " + r1 + " \nIT Support Department").create();
-        System.out.println(message.getSid());
+        System.out.println(r1);
     }
 
     void codeverification() {

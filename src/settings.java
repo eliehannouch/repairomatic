@@ -149,8 +149,8 @@ public class settings extends javax.swing.JFrame {
     PreparedStatement pst;
     PreparedStatement pstD;
     ResultSet rs;
-    public static final String ACCOUNT_SID = "AC7b1892d1b0e07b777b456195ba45b920";
-    public static final String AUTH_TOKEN  = "c258d6d11645f0228bfcfa1f509501e2";
+    public static final String ACCOUNT_SID = "";
+    public static final String AUTH_TOKEN  = "";
  
     /**
      * Creates new form settings
@@ -1442,7 +1442,7 @@ public class settings extends javax.swing.JFrame {
        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message.creator(
                 new com.twilio.type.PhoneNumber("+96171838034"),
-                new com.twilio.type.PhoneNumber("+12517650730")," Dear Administrator the selected employee has been removed successfully\nIT Support Department").create();        
+                new com.twilio.type.PhoneNumber("+14243583620")," Dear Administrator the selected employee has been removed successfully\nIT Support Department").create();        
      }
      }
      
@@ -1573,7 +1573,7 @@ public class settings extends javax.swing.JFrame {
        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message.creator(
                 new com.twilio.type.PhoneNumber("+96171838034"),
-                new com.twilio.type.PhoneNumber("+12517650730")," Dear Administrator the selected customer has been removed successfully\nIT Support Department").create();        
+                new com.twilio.type.PhoneNumber("+14243583620")," Dear Administrator the selected customer has been removed successfully\nIT Support Department").create();        
      }
      }
 // ------------------------------------------------------- END Customer's ----------------------------------------------- //
@@ -1640,7 +1640,7 @@ public class settings extends javax.swing.JFrame {
        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message.creator(
                 new com.twilio.type.PhoneNumber("+96171838034"),
-                new com.twilio.type.PhoneNumber("+12517650730")," Dear Administrator your password has been changed successfully\nIT Support Department").create();        
+                new com.twilio.type.PhoneNumber("+14243583620")," Dear Administrator your password has been changed successfully\nIT Support Department").create();        
      } 
      }
     

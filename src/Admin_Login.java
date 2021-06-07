@@ -141,7 +141,7 @@ public class Admin_Login extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(393, 339));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+ 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         LoginHandler();
     }//GEN-LAST:event_loginActionPerformed
@@ -243,5 +243,5 @@ public class Admin_Login extends javax.swing.JFrame {
         a.setVisible(true);
 
     }
-     
+   
 }
